@@ -74,7 +74,7 @@ It checks whether the software satisfies business requirements or not.
 - **Failure**: When user sees the problem
 
 ### 10. Root Cause 
--Main reason behind the defect. Fixing root cause prevents same issues in future.
+Main reason behind the defect. Fixing root cause prevents same issues in future.
 
 ### 11. 7-Testing Principles 
 1. Testing shows presence of defects (not absence)
