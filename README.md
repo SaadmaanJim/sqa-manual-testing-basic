@@ -83,6 +83,7 @@ Main reason behind the defect. Fixing root cause prevents same issues in future.
 4. Defects cluster together (Pareto principle)
 5. Tests wear out (Pesticide Paradox)
 6. Absence-of-defects fallacy
+7. Testing is context dependent
 
 ---
 
