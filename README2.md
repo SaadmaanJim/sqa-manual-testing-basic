@@ -51,18 +51,18 @@ Flexible, iterative, customer-focused approach.
 - **Responding to change →** over following a plan
 
 **(B). 12 Principles of Agile Methodology**
-- 1. Customer Satisfaction
-- 2. Changing Requirement
-- 3. Frequent Delivery
-- 4. Promoting Collaboration
-- 5. Motivated Individuals
-- 6. Face to Face Communication
-- 7. Maintain a Constant pace
-- 8. Measure Progress
-- 9. Technical Excellance
-- 10. Simplicity
-- 11. Self Organized Teams
-- 12. Continuos Improvements
+- Customer Satisfaction
+- Changing Requirement
+- Frequent Delivery
+- Promoting Collaboration
+- Motivated Individuals
+- Face to Face Communication
+- Maintain a Constant pace
+- Measure Progress
+- Technical Excellance
+- Simplicity
+- Self Organized Teams
+- Continuos Improvements
 
 **(C). Popular Agile Frameworks**
 -----------------------------------------------------------------------------------------------------------------------------------------------
