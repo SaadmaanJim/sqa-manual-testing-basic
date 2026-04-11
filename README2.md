@@ -121,14 +121,21 @@ Flexible, iterative, customer-focused approach.
 - Less time for detailed documentation
 
 **(H). Real-life Example**
---------------------------------------------------------------------------------------------------------------------------------------------
-| Traditional                                                  | Agile                                                                     |
-|------------------------------------------------------------------------------------------------------------------------------------------|
-| Client gives all requirements →                              | Every 2 weeks you get new features →                                      |
-| Development takes 6 months →                                   You test them immediately →                                               |
-| Testing starts in month 7 → Many critical bugs found →         Bugs fixed in the same sprint →                                           |
-| Project delayed by 2–3 months.                                 After 3 months you already have a usable product with customer feedback.  |                    
----------------------------------------------------------------------------------------------------------------------------------------------
+   **Traditional (Waterfall):**
+    - Client provides all requirements at the beginning
+    - Development runs for 6 months without testing
+    - Testing phase starts only in month 7
+    - Many critical bugs and missing features are discovered late
+    - Project gets delayed by 2–3 months
+    - Final delivery is risky and often doesn't fully meet expectations
+
+  **Agile:**
+    - Requirements are broken into small user stories
+    - Every 2 weeks (one sprint) new features are delivered
+    - Tester starts testing as soon as code is ready (same sprint)
+    - Bugs are found early and fixed immediately within the sprint
+    - After 3 months, you already have a working, tested, and usable product
+    - Customer gives feedback regularly and changes can be incorporated easily
 
 ### 8. Activities of Agile (8 Steps)
  Define the project , Create a backlog , Plan the sprint , Execute the sprint , Review and demo , Retrospect , Repeat , Continuously improve
@@ -146,5 +153,27 @@ Flexible, iterative, customer-focused approach.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Flow:** Step 1-3 (once) → Repeat Step 4-8 every sprint
 
+### 9. Approaches (TDD, BDD, ATDD)
+
+**(i). TDD:**  
+- Test-Driven Development
+- Write test first → then write code to pass the test → refactor
+- Developer
+- Unit test code (JUnit, NUnit, pytest)
+- Code correctness & design
+
+**(ii). BDD:**
+- Behavior-Driven Development
+- Describe software behavior from user's perspective using Given-When-Then
+- Tester + Product Owner + Dev (Collaboration)
+- Given-When-Then (Gherkin language)
+- Business behavior & shared understanding
+
+**(iii). ATDD:**
+- Acceptance Test-Driven Development
+- Write acceptance tests first based on user requirements
+- Tester + Product Owner + Dev
+- Plain English + Acceptance Criteria
+- Business acceptance & requirements
 
 ---
