@@ -121,6 +121,7 @@ Flexible, iterative, customer-focused approach.
 - Less time for detailed documentation
 
 **(H). Real-life Example**
+  
    **Traditional (Waterfall):**
     - Client provides all requirements at the beginning
     - Development runs for 6 months without testing
@@ -138,7 +139,9 @@ Flexible, iterative, customer-focused approach.
     - Customer gives feedback regularly and changes can be incorporated easily
 
 ### 8. Activities of Agile (8 Steps)
+
  Define the project , Create a backlog , Plan the sprint , Execute the sprint , Review and demo , Retrospect , Repeat , Continuously improve
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Step | Activity                          | Description                                                                 | Key Output                          |
 |------|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------|
