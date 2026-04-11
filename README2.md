@@ -125,9 +125,9 @@ Flexible, iterative, customer-focused approach.
 | Traditional                                                  | Agile                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------|
 | Client gives all requirements →                              | Every 2 weeks you get new features →                                      |
-| Development takes 6 months →                                 | You test them immediately →                                               |
-| Testing starts in month 7 → Many critical bugs found →       | Bugs fixed in the same sprint →                                           |
-| Project delayed by 2–3 months.                               | After 3 months you already have a usable product with customer feedback.  |                    
+| Development takes 6 months →                                   You test them immediately →                                               |
+| Testing starts in month 7 → Many critical bugs found →         Bugs fixed in the same sprint →                                           |
+| Project delayed by 2–3 months.                                 After 3 months you already have a usable product with customer feedback.  |                    
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 8. Activities of Agile (8 Steps)
