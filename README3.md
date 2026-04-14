@@ -162,26 +162,26 @@
 - **Real-Life Example:** In a mobile app, tester or tool randomly taps anywhere on screen, enters garbage text, rotates screen suddenly, etc.        
 - **When it is done?** To find unexpected crashes
 
-  *(vii). Gorilla Testing*
+*(vii). Gorilla Testing*
 
 - **Defination:** Heavy, repetitive testing on one single module/feature to check its robustness.
 - **Real-Life Example:** Testing the “Login” screen 1000 times with different usernames, passwords, special characters, copy-paste, etc.         
 - **When it is done?** For critical modules
 
-  *(viii). Alpha Testing*
+*(viii). Alpha Testing*
 
 - **Defination:** Testing done by the internal team (developers + testers) in the development environment before releasing to real users.
 - **Real-Life Example:** Before launching the app, the company’s own employees use the app and report bugs.           
 - **When it is done?** Before Beta release
 
 
-  *(ix).Beta Testing*
+*(ix).Beta Testing*
 
 - **Defination:** Testing done by real users in their real environment before final release. Feedback is collected from actual customers. 
 - **Real-Life Example:** Company releases the app to 500 selected users. Users use it in their daily life and report issues (network problems, battery drain,                              etc.).           
 - **When it is done?** Just before public launch
 
-*(iii). A/B Testing*
+*(xi). A/B Testing*
 
 - **Defination:** Comparing two versions (A and B) of the same feature to see which one performs better (based on user behavior).
 - **Real-Life Example:** Showing two different “Buy Now” button colors (red vs green) to different users and checking which one gets more clicks and sales.      - **When it is done?** In live production (after launch)
@@ -218,13 +218,101 @@
 - **Real-Life Example:** Comparing your app’s login time (2.5 sec) with a competitor’s app (1.8 sec) or with the previous version of your own app.          
 - **When it Matters?** Helps set performance goals and prove that your system is getting better over time.
 
+## 4. Good Testing Practices
+- Every development activity should have a corresponding test activity
+- Different test levels have specific objectives
+- Start testing early (Shift-Left approach)
+- Testers should review documents as soon as drafts are ready
 
+Good Testing Practices are the habits that professional SQA teams follow to deliver better quality software faster and with fewer bugs.
 
+#### (A). Every development activity should have a corresponding test activity
+**Meaning**: Whatever developers build, testers should test it. Testing should happen in parallel with development.
 
+**Real-world Example**:  
+In a **Food Delivery App** (like Pathao Food):
+- When developers build "Order Placement" feature → Testers immediately create test cases for it.
+- When developers integrate "Payment Gateway" → Testers plan functional, security, and performance testing.
 
+#### (B). Different test levels have specific objectives
+**Meaning**: Each testing level (Unit, Integration, System, Acceptance) has its own goal.
 
+**Real-world Example** (Food Delivery App):
+- **Unit Testing**: Check if "Calculate Delivery Charge" function works correctly.
+- **Integration Testing**: Check if Login + Cart + Payment work together smoothly.
+- **System Testing**: Test the complete flow from selecting food to receiving order.
+- **Acceptance Testing**: Customer checks if the app meets their business needs.
 
+#### (C). Start testing early (Shift-Left Approach)
+**Meaning**: Testing should begin as early as possible in the project, not just at the end.
 
+**Real-world Example**:
+- **Bad Way**: Development finishes completely, then testing starts → Many critical bugs found → Project gets delayed.
+- **Good Way (Shift-Left)**: Testers review requirements in Week 1, design in Week 2, and start writing test cases while developers are still coding → Bugs are caught early → Less rework → Project delivered on time.
+
+**Benefit**: Fixing a bug in the requirement phase is 100 times cheaper than fixing it after launch.
+
+#### (D). Testers should review documents as soon as drafts are ready
+**Meaning**: Testers must review requirements, designs, and user stories immediately when drafts are shared.
+
+**Real-world Example**:
+Business Analyst shares a draft requirement for "Promo Code System".  
+Tester reviews it the same day and asks:
+- What happens if a user applies two promo codes together?
+- What is the maximum discount limit?
+- Can expired promo codes be used?
+
+→ Requirements become clearer before development starts → Fewer defects later.
+
+**Summary**:  
+Good Testing Practices mean **testing early, testing continuously, and testing smartly** alongside development.
+
+## 5. Independence of Testing
+- No Independence → Author tests own work
+- Some Independence → Peers in same team
+- High Independence → Testers from other teams
+- Very High Independence → External testers
+
+Independence of Testing means **how much distance** there is between the person who developed the code and the person who is testing it.  
+The more independent the tester is, the more objective and effective the testing becomes.
+
+#### Levels of Independence
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Level                    | Who Tests the Work?                          | Objectivity | Real-World Scenario                                                  |
+|--------------------------|----------------------------------------------|-----------|---------------------                                                   |
+| **No Independence**      | Author (Developer tests his own code)        | Very Low  | Developer writes "Fund Transfer" feature and tests it himself. He may  |  |                                                                                          miss obvious bugs because he is biased.                             |
+| **Some Independence**    | Peers from the same team                     | Low       | Another developer in the same team reviews and tests the code.         |
+| **High Independence**    | Testers from other teams inside the company  | High      | A dedicated tester from the "Payments Testing Team" (different team)   |  |                                                                                       tests the feature thoroughly.                                          |
+| **Very High Independence**| External testers / Third-party company      | Very High | The bank hires an external QA & Security company to perform penetration|  |                                                                                        testing.                                                              |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### Real-Life Scenario: Mobile Banking App (bKash / Nagad)
+
+**Project**: Adding a new "Fund Transfer" feature.
+
+- **No Independence**: The developer who coded the feature tests it himself. He only tests the "happy path" and misses a critical bug — user can transfer money even with zero balance.
+- **Some Independence**: A teammate tests it. He finds some issues but may hesitate to report harshly due to team relationship.
+- **High Independence**: A tester from the separate "Core Banking Testing Team" tests the feature. He finds the zero-balance bug, security loopholes, and improper error handling.
+- **Very High Independence**: The bank hires an external cybersecurity firm. They discover not only the zero-balance issue but also API vulnerabilities, session hijacking risks, and data leakage possibilities.
+
+**Result**: Higher independence → More critical bugs found → Safer and more reliable app.
+
+#### Additional Real-Life Examples from Different Domains
+
+1. **E-commerce App (like Daraz)**:
+   - High Independence: A tester from the "Checkout Team" tests the "Product Recommendation Engine" built by the AI Team.
+   - Very High Independence: External QA company tests the payment gateway before Eid sale.
+
+2. **Education App (like 10 Minute School or AIUB Portal)**:
+   - High Independence: Testers from the "Exam Module Team" test the "Result Publishing" feature developed by another team.
+   - Very High Independence: External auditors test the entire exam result system before publishing board exam results.
+
+#### Why Independence Matters
+- Reduces bias and "blind spots"
+- Increases the chance of finding hidden and critical bugs
+- Improves overall software quality and security
+- Especially important for banking, payment, healthcare, and government systems
+
+**Best Practice**: In most professional Agile teams, we aim for **High Independence**. For critical features, we go for **Very High Independence**.
 
 
 
